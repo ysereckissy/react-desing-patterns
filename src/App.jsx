@@ -3,6 +3,7 @@ import React from 'react';
 import GeolocationContainer from './components/compose-all-the-things/container-presentation-pattern/geolocation-container';
 import WindowWithInnerWidth from './components/compose-all-the-things/hocs/windowInnerWidth';
 import Counter from './components/proper-data-fetching/data-flow/Counter';
+import GistsList from './components/proper-data-fetching/data-fetching/GistsList';
 
 import logo from './logo.svg';
 import './App.css';
@@ -40,6 +41,9 @@ function App() {
         <h1>Proper Data Fetching</h1>
         <section>
           <Counter />
+        </section>
+        <section>
+          <GistsList />
         </section>
       </article>
     </div>
