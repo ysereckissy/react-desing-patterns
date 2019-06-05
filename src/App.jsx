@@ -2,7 +2,7 @@ import React from 'react';
 
 import GeolocationContainer from './components/compose-all-the-things/container-presentation-pattern/geolocation-container';
 import WindowWithInnerWidth from './components/compose-all-the-things/hocs/windowInnerWidth';
-import Counter from './components/proper-data-fetching/Counter';
+import Counter from './components/proper-data-fetching/data-flow/Counter';
 
 import logo from './logo.svg';
 import './App.css';
