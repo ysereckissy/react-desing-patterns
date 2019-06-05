@@ -6,8 +6,8 @@ class GeolocationContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      latitude: null,
-      longitude: null,
+      latitude: 0,
+      longitude: 0,
     };
 
     this.handleSuccess = this.handleSuccess.bind(this);

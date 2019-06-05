@@ -2,6 +2,7 @@ import React from 'react';
 
 import GeolocationContainer from './components/compose-all-the-things/container-presentation-pattern/geolocation-container';
 import WindowWithInnerWidth from './components/compose-all-the-things/hocs/windowInnerWidth';
+import Counter from './components/proper-data-fetching/Counter';
 
 import logo from './logo.svg';
 import './App.css';
@@ -35,6 +36,12 @@ function App() {
         <h3>Window Inner Width location section</h3>
         <WindowWithInnerWidth />
       </section>
+      <article>
+        <h1>Proper Data Fetching</h1>
+        <section>
+          <Counter />
+        </section>
+      </article>
     </div>
   );
 }
