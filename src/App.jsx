@@ -1,6 +1,7 @@
 import React from 'react';
 
 import GeolocationContainer from './components/compose-all-the-things/container-presentation-pattern/geolocation-container';
+import WindowWithInnerWidth from './components/compose-all-the-things/hocs/windowInnerWidth';
 
 import logo from './logo.svg';
 import './App.css';
@@ -29,6 +30,10 @@ function App() {
       <section>
         <h3>Geolocation location section</h3>
         <GeolocationContainer />
+      </section>
+      <section>
+        <h3>Window Inner Width location section</h3>
+        <WindowWithInnerWidth />
       </section>
     </div>
   );
