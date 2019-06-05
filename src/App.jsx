@@ -1,6 +1,6 @@
 import React from 'react';
 
-import GeolocationContainer from './components/compose-all-the-things/geolocation-container';
+import GeolocationContainer from './components/compose-all-the-things/container-presentation-pattern/geolocation-container';
 
 import logo from './logo.svg';
 import './App.css';
