@@ -27,6 +27,7 @@ function App() {
         </a>
       </header>
       <section>
+        <h3>Geolocation location section</h3>
         <GeolocationContainer />
       </section>
     </div>
