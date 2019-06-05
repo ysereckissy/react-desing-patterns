@@ -43,7 +43,7 @@ function App() {
           <Counter />
         </section>
         <section>
-          <GistsList />
+          <GistsList username="gaearon" />
         </section>
       </article>
     </div>

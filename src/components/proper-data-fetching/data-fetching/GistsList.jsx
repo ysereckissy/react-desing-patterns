@@ -21,5 +21,5 @@ List.defaultProps = {
 };
 
 
-const GistsList = withData('https://api.github.com/users/gaearon/gists')(List);
+const GistsList = withData(props => `https://api.github.com/users/${props.username}/gists`)(List);
 export default GistsList;

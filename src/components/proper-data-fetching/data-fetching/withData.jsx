@@ -11,7 +11,8 @@ const withData = url => Component => (
     }
 
     componentDidMount() {
-      fetch(url)
+      const endpoint = typeof url === 'function' ? url(this.props) : url;
+      fetch(endpoint)
         .then(response => response.json())
         .then(data => this.setState({
           data,
