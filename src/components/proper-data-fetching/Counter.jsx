@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Buttons from './Buttons';
+import Display from './Display';
 
 import './Counter.css';
 
@@ -33,9 +34,7 @@ class Counter extends Component {
     const { counter } = this.state;
     return (
       <div>
-        <h1>
-          {counter}
-        </h1>
+        <Display counter={counter} />
         <Buttons
           onDecrement={this.handleDecrement}
           onIncrement={this.handleIncrement}
