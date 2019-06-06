@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Gist from './Gist';
 
 import withData from './withData';
 
-const List = ({ data: gists }) => (
-  <ul>
-    {gists.map(gist => (
-      <li key={gist.id}>
-        {gist.description}
-      </li>
-    ))}
-  </ul>
+const List = ({ gists }) => (
+  gists.fulfilled && (
+    <ul>
+      {gists.value.map(gist => (
+        <Gist key={gist.id} {...gist} />
+      ))}
+    </ul>
+  )
 );
 
 List.propTypes = {
@@ -23,3 +24,4 @@ List.defaultProps = {
 
 const GistsList = withData(props => `https://api.github.com/users/${props.username}/gists`)(List);
 export default GistsList;
+export { List };
