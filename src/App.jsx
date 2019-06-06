@@ -4,6 +4,7 @@ import GeolocationContainer from './components/compose-all-the-things/container-
 import WindowWithInnerWidth from './components/compose-all-the-things/hocs/windowInnerWidth';
 import Counter from './components/proper-data-fetching/data-flow/Counter';
 import ListWithGists from './components/proper-data-fetching/react-refetch/ListWithGists';
+import Uncontrolled from './components/code-for-browser/Uncontrolled';
 
 import logo from './logo.svg';
 import './App.css';
@@ -37,6 +38,12 @@ function App() {
         <h3>Window Inner Width location section</h3>
         <WindowWithInnerWidth />
       </section>
+      <article>
+        <h1>Write code for browser</h1>
+        <section>
+          <Uncontrolled />
+        </section>
+      </article>
       <article>
         <h1>Proper Data Fetching</h1>
         <section>
