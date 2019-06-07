@@ -27,16 +27,19 @@ class Uncontrolled extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(`${this.state.firstName} ${this.state.lastName}`);
+    this.setState({
+      firstName: '',
+      lastName: '',
+    });
   }
 
   render() {
     const { firstName, lastName } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
-        <input type="text" onChange={this.handleFirstNameChange} />
-        <input type="text" onChange={this.handleLastNameChange} />
-        <button type="button">
+        <input type="text" onChange={this.handleFirstNameChange} value={firstName} />
+        <input type="text" onChange={this.handleLastNameChange} value={lastName} />
+        <button type="submit">
           Submit
         </button>
       </form>
