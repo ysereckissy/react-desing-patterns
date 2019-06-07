@@ -5,6 +5,8 @@ import WindowWithInnerWidth from './components/compose-all-the-things/hocs/windo
 import Counter from './components/proper-data-fetching/data-flow/Counter';
 import ListWithGists from './components/proper-data-fetching/react-refetch/ListWithGists';
 import Uncontrolled from './components/code-for-browser/Uncontrolled';
+import Transition from './components/code-for-browser/animations/Transition';
+import ReactMotionTransition from './components/code-for-browser/animations/ReactMotionTransition';
 
 import logo from './logo.svg';
 import './App.css';
@@ -40,6 +42,12 @@ function App() {
       </section>
       <article>
         <h1>Write code for browser</h1>
+        <section>
+          <ReactMotionTransition />
+        </section>
+        <section>
+          <Transition />
+        </section>
         <section>
           <Uncontrolled />
         </section>
